@@ -1,4 +1,4 @@
-# Prática 1 - Atlântico
+# Prática - Atlântico
 
 Este repositório contém páginas HTML.
 
