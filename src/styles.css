@@ -1,18 +1,20 @@
 /* Estilos Globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c2f3f9;
+    background-color: #f4f9fc; /* Cor de fundo suave */
     color: #333;
+    line-height: 1.6;
 }
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #333;
+    background-color: #007bff; /* Azul vibrante */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para o menu de navegação */
@@ -32,21 +34,22 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
     border-radius: 5px;
 }
 
 /* Estilos para o conteúdo principal */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para tabelas */
@@ -66,31 +69,31 @@ th, td {
     text-align: left;
 }
 
-/* Estilo para o cabeçalho */
+/* Estilo para o cabeçalho da tabela */
 th {
-    background-color: #009879; /* Cor verde escura */
-    color: #ffffff;
+    background-color: #007bff; /* Azul do cabeçalho */
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 /* Linhas alternadas (zebra) */
 table tr:nth-child(odd) {
-    background-color: #f3f3f3; /* Cor cinza claro */
+    background-color: #f9f9f9; /* Cor de fundo clara */
 }
 
 table tr:nth-child(even) {
-    background-color: #ffffff; /* Cor branca */
+    background-color: #ffffff;
 }
 
-/* Efeito hover */
+/* Efeito hover na tabela */
 table tr:hover {
-    background-color: #d1e7dd; /* Efeito hover com verde claro */
+    background-color: #d1e7ff; /* Azul claro ao passar o mouse */
 }
 
 /* Estilo para links dentro da tabela */
 table td a {
-    color: #009879; /* Mesma cor do cabeçalho */
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -99,13 +102,73 @@ table td a:hover {
     text-decoration: underline; /* Efeito ao passar o mouse sobre o link */
 }
 
+/* Estilo para o botão de pesquisa */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Efeito de hover no botão */
+}
+
+/* Estilo para a div que envolve o formulário de pesquisa */
+.search-form-container {
+    padding: 20px;
+    background-color: #e8f4fe; /* Azul claro para o fundo */
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os campos de input */
+.search-section input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão de submit do formulário */
+.search-section input[type="submit"] {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para o botão do formulário de pesquisa */
+.search-section input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
 /* Estilos para o rodapé */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 20px;
+    background-color: #007bff;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 14px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
